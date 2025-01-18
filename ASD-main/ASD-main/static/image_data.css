@@ -1,0 +1,64 @@
+body {
+    background-image:url('bg.png');
+    background-size:cover;
+    background-position:contain; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.upload-form {
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+/* Adjust the input's z-index to make sure it's clickable */
+#imageInput {
+    z-index: 1;
+    cursor: pointer;
+}
+
+#uploadLabel {
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uploadText {
+    font-size: 16px;
+}
+
+#predictButton {
+    margin-top: 10px; /* Adjust spacing as needed */
+    z-index: 2; 
+}
+
+#uploadedImage {
+    display: block; /* or inline-block, but make sure it is not 'none' */
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* This makes the image scale to fit the container while maintaining its aspect ratio */
+    object-position: center; /* This centers the image within the container */
+}
+
+
+
+

@@ -1,0 +1,109 @@
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('/static/aut.jpg');
+    background-size: cover; /* Adjust background image size */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Ensure background image stays fixed */
+
+
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    text-align: center; /* Center align navigation links */
+    background-image: none;
+}
+
+nav ul li {
+    display: inline; /* Display links inline */
+    margin-right: 20px; /* Add space between links */
+}
+
+nav ul li a {
+    color: #fff; /* Light text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Style for the main content */
+.container {
+    width: 80%; /* Set width of the container */
+    margin: 20px auto; /* Center the container */
+}
+
+/* Style for the header */
+header {
+    text-align: center; /* Center align header content */
+    margin-bottom: 20px; /* Add space below header */
+    background-size: cover; /* Cover the entire header */
+    color: rgb(223, 35, 35); /* Text color */
+    padding: 50px; /* Add padding for better readability */
+}
+
+/* Style for the footer */
+/* footer {
+    text-align: center; 
+    margin-top: 20px; 
+} */
+
+footer {
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff; /* Light text color */
+    padding: 10px 0; /* Add padding */
+    text-align: center; /* Center align content */
+}
+
+/* Style for large buttons */
+.large-button {
+    background-color: hsla(7, 39%, 49%, 0.852); /* Green background color */
+    color: white; /* Text color */
+    padding: 20px 40px; /* Increase padding for larger size */
+    font-size: 16px; /* Increase font size */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-bottom: 10px; /* Add space between buttons */
+}
+
+.large-button:hover {
+    background-color: hsla(7, 39%, 49%, 0.852); /* Darker green color on hover */
+}
+
+/* .chatbox {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+} */
+/* 
+.chatbox ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chatbox input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 5px;
+}
+
+.chatbox button {
+    width: 50px;
+    padding: 5px;
+} */

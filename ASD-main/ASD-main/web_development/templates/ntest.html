@@ -1,0 +1,149 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autism Screening Form</title>
+        <link rel="stylesheet" href="static\styles.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>Autism Screening Form</h1>
+            <form method="post" action="/submit_numerical">
+                <div class="form-group">
+                    <label for="A1">Does your child not respond to you when you call his/her name?</label>
+                    <input type="number" id="A1"  name="A1" min="0" max="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="A2">Is it hard for the child to make eye contact?</label>
+                    <input type="number" id="A2"  name="A2" min="0" max="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="A3">Does your child not point to indicate that s/he wants something?(e.g. a toy that is out of reach)</label>
+                    <input type="number" id="A3"  name="A3" min="0" max="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="A4">Does your child find it hard to share interest with you?(e.g. pointing at an interesting sight)</label>
+                    <input type="number" id="A4"  name="A4" min="0" max="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="A5">Does your child find it hard to pretend?(e.g care for dolls,talk on a toy phone)</label>
+                    <input type="number" id="A5"  name="A5" min="0" max="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="A6">Does your child find it hard to follow where you're looking?</label>
+                    <input type="number" id="A6"  name="A6" min="0" max="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="A7">Does your child find it hard to show comfort to others when they see them in pain?(e.g. stroking hair,hugging them)</label>
+                    <input type="number" id="A7"  name="A7" min="0" max="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="A8">Does your child do repetative actions</label>
+                    <input type="number" id="A8"  name="A8" min="0" max="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="A9">Does the child find it hard to use simple gestures?</label>
+                    <input type="number" id="A9"  name="A9" min="0" max="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="A10_Autism_Spectrum_Quotient">Does the child stare at anything with no apparent purpose?</label>
+                    <input type="number" id="A10"  name="A10_Autism_Spectrum_Quotient" min="0" max="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Social_Responsiveness_Scale">Does the child finds it hard to respond socially?</label>
+                    <input type="number" id="A1"  name="A1" min="0" max="1" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="Age_Years">Enter the age of the child</label>
+                    <input type="number" id="age"  name="Age_Years" min="0" max="14" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Qchat_10_Score">How many 1's did you select from above question 1 to 10</label>
+                    <input type="number" id="Qchat_10_Score"  name="Qchat_10_Score" min="0" max="10" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Speech Delay/Language">Speech Delay/Language Disorder</label>
+                    <input type="number" id="Speech Delay/Language"  name="Speech Delay/Language" min="0" max="1" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Learning Disorder">Learning Disorder</label>
+                    <input type="number" id="Learning Disorder"  name="Learning Disorder" min="0" max="1" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Genetic_Disorders">Genetic Disorders</label>
+                    <input type="number" id="Genetic_Disorders"  name="Genetic_Disorders" min="0" max="1" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Depression">Is your child suffering from Depression?</label>
+                    <input type="number" id="depression"  name="depression" min="0" max="1" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Global developmental delay/intellectual disability">Global developmental delay/intellectual disability</label>
+                    <input type="number" id="Global developmental delay/intellectual disability"  name="Global developmental delay/intellectual disability" min="0" max="1" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Social/Behavioural Issues">Social/Behavioural Issues</label>
+                    <input type="number" id="Social/Behavioural Issues"  name="Social/Behavioural Issues" min="0" max="1" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Childhood Autism Rating Scale">Childhood Autism Rating Scale</label>
+                    <input type="number" id="Childhood Autism Rating Scale"  name="Childhood Autism Rating Scale" min="0" max="1" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Anxiety_disorder">Anxiety_disorder</label>
+                    <input type="number" id="Anxiety_disorder"  name="Anxiety_disorder" min="0" max="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Sex">Sex</label>
+                    <select id="Sex" name="Sex" required>
+                        <option value="" selected disabled>Select Sex</option>
+                        <option value="M">M</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Jaundice">Is the child suffering from Jaundice?</label>
+                    <input type="number" id="jaundice"  name="jaundice" min="0" max="1" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="Family_mem_with_ASD">Is there any family member with autism?</label>
+                    <input type="number" id="family"  name="family" min="0" max="1" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>    
+</html>
+
+

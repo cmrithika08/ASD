@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Prediction</title>
+    <link rel="stylesheet" href="/static/image_data.css">
+</head>
+<body>
+
+<div class="upload-form">
+    <div class="image-container">
+        <!-- <input type="file" id="imageInput" accept="image/*"> -->
+        <form id="imageForm" method="POST" action="/submit_numerical" enctype="multipart/form-data">
+            <input type="file" id="imageInput" name="imageInput" accept="image/*">
+        </form>
+        <label for="imageInput" id="uploadLabel">
+            <span id="uplaodIcon">&#x1F4F7;</span>
+            <span id="uploadText">Add Image</span>
+        </label>
+        <img id="uploadedImage" src="#" alt="Uploaded Image" style="display: none;">
+    </div>
+    <button id="predictButton">Predict</button>
+    <!-- <div id="loadingBar" style="display: none;">
+        <div id="loadingProgress"></div>
+    </div> -->
+</div>
+
+<!-- Optional: Place for prediction results -->
+<div id="predictionResult"></div>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
